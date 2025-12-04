@@ -1,8 +1,12 @@
 function firstWord(s) {
   // your code here
-	  let arr=s.split(" ");
-	
-  return arr[0];
+	 s = s.trim();
+
+  // if empty return empty string
+  if (s === "") return "";
+
+  // split by spaces and return first word
+  return s.split(" ")[0];
 }
 
 // Do not change the code below
